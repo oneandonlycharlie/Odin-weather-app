@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <p>Remind your loved to bring an umbrella, or enjoy the sunshine.</p>
+        <form action="">
+            <input type="text" id="location" placeholder="Find your city...">
+             <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="today">
+        <div class="date"> 
+            <span class="location">Shanghai</span>
+            <p><span class="temp">24</span> Celsius</p>
+        </div>
+        <div class="description"> weather description</div>
+        <div class="preci"> Default is Sunny </div>
+    </div>
+    <div class="forecast">
+        <div class="entry">
+            <div class="date">
+            <p>Date and Week</p>
+            </div>
+            <div class="temp">temperature min to max</div>
+            <p class="condition">condition</p>
+            <p class="preci">precipation forecast - default Sunny</p>
+        </div>
+    </div>
+    <footer>Acknowledgement</footer>
+</body>
+</html>
