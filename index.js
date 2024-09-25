@@ -7,7 +7,6 @@ async function getWeatherData() {
             {mode:'cors'});
         const weatherData = await response.json();
         matchToday(weatherData);
-
         return weatherData
     } catch(error) {
 
@@ -15,6 +14,7 @@ async function getWeatherData() {
 }
 
 
+// get data for today
 const matchToday = function (data) {
     city.textContent = data["address"];
     tempatureToday.textContent = data["days"][0]["temp"];
@@ -25,21 +25,7 @@ const matchToday = function (data) {
 
 
 
-
-
-
-
-// Build a today object
-
-
-
-
-
-
-
-
-
-// build a forecast object
+// get data for tomorrow
 
 
 
